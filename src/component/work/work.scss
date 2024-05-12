@@ -1,0 +1,72 @@
+.work {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #1c92d2 0%, #f2fcfe 100%);
+    box-sizing: border-box;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+        max-width: 900px;
+        overflow: auto;
+        max-height: calc(100vh - 10vh);
+
+    }
+
+    .box::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .box::-webkit-scrollbar-thumb {
+        background-color: #94c7da;
+        border-radius: 2px;
+    }
+
+    .box::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+
+
+    table {
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        width: 100%;
+
+        thead {
+            tr {
+                background-color: #f2f2f2;
+                text-align: left;
+            }
+
+        }
+
+        td,
+        th {
+            padding: 12px 15px
+        }
+
+    }
+
+    .job-detail {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 50px;
+
+        div,
+        strong {
+            padding: 5px;
+        }
+    }
+
+    h4 {
+        margin: 10px 0;
+        padding-left: 30px;
+        font-style: italic;
+    }
+}

@@ -1,0 +1,44 @@
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #94c7da;
+  border-radius: 2px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.perview {
+  position: absolute;
+  top: 0;
+  right: calc(0.35 * -1000px);
+  scale: 0.15;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50px;
+  display: none;
+  :last-child{
+    top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .perview {
+    display: flex;
+  }
+}
